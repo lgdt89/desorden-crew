@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">     
       <body className={inter.className}>
-       <Header logoSrc={"https://lemonagency.com/wp-content/uploads/lemon_logox400.png"} navItems={[{label:"about", url:"/"},{label:"work", url:"/"},{label:"services", url:"/"}]}/>
+       <Header logoSrc={"/images/desorden.gif"} navItems={[{label:"about", url:"/"},{label:"work", url:"/"},{label:"services", url:"/"}]}/>
         {children}</body>
     </html>
   )

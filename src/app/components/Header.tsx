@@ -1,16 +1,16 @@
+import { StaticImageData } from "next/image";
 import HeroSection from "./HeroSection";
 import Navbar, { NavItem } from "./NavBar";
-
 interface HeaderProps {
-  logoSrc: string;
+  logoSrc: any;
   navItems: NavItem[];
 }
 
 const Header: React.FC<HeaderProps> = ({ logoSrc, navItems }) => {
   return (
-     <header className="flex items-center justify-between py-12 px-44">
+     <header className="flex items-center justify-between py-12 px-44 bg-black">
       <div className="flex items-center">
-        <img src={logoSrc} alt="Logo" className="h-10 w-auto" />
+        <img src={logoSrc} alt="Logo" className="h-36 w-[200px]" />
       </div>
       <Navbar items={navItems} />
       
