@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import HeroSection from "./HeroSection";
 import Navbar, { NavItem } from "./NavBar";
 interface HeaderProps {

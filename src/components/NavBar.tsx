@@ -1,6 +1,5 @@
-'use client'
-import Link from 'next/link';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 export interface NavItem {
   label: string;
   url: string;
@@ -45,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
         <ul className="absolute left-0 right-0 mx-auto bg-white  rounded-md mt-2 py-2 z-10 md:hidden">
           {items.map((item, index) => (
             <li key={index} className='border-b-4'>
-              <Link href={item.url} className="block text-white  px-4 py-2">
+              <Link to={item.url} className="block text-white  px-4 py-2">
               
                   {item.label}
                
@@ -58,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       <ul className="hidden md:flex md:space-4 w-[380px]">
         {items.map((item, index) => (
           <li key={index} className='w-full text-2xl uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300'>
-            <Link href={item.url} className="text-white">
+            <Link to={item.url} className="text-white">
               {item.label}
             </Link>
           </li>
