@@ -7,7 +7,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ logoSrc, navItems }) => {
   return (
-     <header className="flex items-center justify-between py-12 px-44 bg-black">
+     <header className="flex items-center justify-between px-12 bg-black md:py-12 md:px-44 ">
       <div className="flex items-center">
         <img src={logoSrc} alt="Logo" className="h-36 w-[200px]" />
       </div>

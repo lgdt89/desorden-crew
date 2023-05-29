@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       <div className="md:hidden relative">
         <button
           type="button"
-          className="flex items-center px-3 py-2 border border-gray-400 rounded-md hover:text-gray-900 focus:outline-none"
+          className="flex items-center px-3 py-2 border border-gray-400 rounded-md focus:outline-none"
           onClick={handleToggleMenu}
         >
           <svg
@@ -41,10 +41,10 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       </div>
 
       {isMenuOpen && (
-        <ul className="absolute left-0 right-0 mx-auto bg-white  rounded-md mt-2 py-2 z-10 md:hidden">
+        <ul className="absolute left-0 right-0 mx-auto bg-white  rounded-md mt-9 py-2 z-10 md:hidden">
           {items.map((item, index) => (
-            <li key={index} className='border-b-4'>
-              <Link to={item.url} className="block text-white  px-4 py-2">
+            <li key={index} className='border-b-4 pl-3'>
+              <Link to={item.url} className="block text-black  px-4 py-2">
               
                   {item.label}
                
