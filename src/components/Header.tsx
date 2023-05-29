@@ -6,9 +6,9 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ logoSrc, navItems }) => {
   return (
-     <header className="flex items-center justify-between px-12 bg-black md:py-12 md:px-44 ">
+     <header className="flex items-center justify-between px-12 bg-black md:py-4 md:px-24 ">
       <div className="flex items-center">
-        <img src={logoSrc} alt="Logo" className="h-36 w-[200px]" />
+        <img src={logoSrc} alt="Logo" className="h-[5.5rem] w-[100px] md:h-[10.5rem] md:w-[300px]" />
       </div>
       <Navbar items={navItems} />
       
