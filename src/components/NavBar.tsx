@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       </div>
 
       {isMenuOpen && (
-        <ul className="absolute left-0 right-0 mx-auto bg-white mt-4 rounded-md md: mt-9 py-2 z-10 md:hidden">
+        <ul className="absolute left-0 right-0 mx-auto bg-white mt-4 rounded-md md:mt-9 py-2 z-10 md:hidden">
           {items.map((item, index) => (
             <li key={index} className='border-b-4 pl-3'>
               <Link to={item.url} className="block text-black  px-4 py-2">
@@ -56,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
 
       <ul className="hidden md:flex md:space-4 w-[380px]">
         {items.map((item, index) => (
-          <li key={index} className='w-full text-2xl uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300'>
+          <li key={index} className='w-full text-2xl uppercase text-center px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300'>
             <Link to={item.url} className="text-white">
               {item.label}
             </Link>

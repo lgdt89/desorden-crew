@@ -1,14 +1,16 @@
 import viteLogo from './assets/desorden.gif'
 import './App.css'
 import Header from './components/Header'
-import HeroSection from './components/HeroSection'
+import { Outlet } from "react-router-dom";
+
 
 function App() {
-  const navLinks = [{label:"About", url:"/about"}, {label:"Services", url:"/services"},{label:"work", url:"/work"}]
+  const navLinks = [{label:"Home", url:"/"},{label:"About", url:"/about"}, {label:"Services", url:"/services"},{label:"Work", url:"/work"}]
   return (
+    
     <>
       <Header logoSrc={viteLogo} navItems={navLinks} />
-      <HeroSection/>
+       <Outlet />
     </>
   )
 }
