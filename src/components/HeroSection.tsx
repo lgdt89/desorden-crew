@@ -1,4 +1,3 @@
-import React from 'react';
 import video from "../assets/test_video.mp4"
 const HeroSection = () => {
   return (
