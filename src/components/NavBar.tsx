@@ -68,14 +68,3 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
 };
     
   export default Navbar;
-  // <nav className="flex items-center w-[380px]">
-  //   <ul className="flex space-x-4 justify-between w-full ">
-  //     {items.map((item, index) => (
-  //       <li key={index} className='text-4xl uppercase'>
-  //         <Link href={item.url} className="text-gray-700 hover:text-gray-900">
-  //          {item.label}
-  //         </Link>
-  //       </li>
-  //     ))}
-  //   </ul>
-  // </nav>
