@@ -19,7 +19,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="w-full h-full mt-10 mb-40 flex flex-col md:flex-row justify-center items-center gap-y-[200px] md:gap-10 lg:gap-20">
+      <div className="w-[90%] h-full mt-20 mb-40 flex flex-wrap flex-col md:flex-row justify-center items-center gap-y-40 gap-20">
         <FlipCard 
           image="/img/img-2.jpeg" 
           name="GUILLAUME GONZAGUE" 
