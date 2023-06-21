@@ -56,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
 
       <ul className="hidden md:flex md:space-4 w-[380px]">
         {items.map((item, index) => (
-          <li key={index} className='w-full text-2xl uppercase text-center px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300'>
+          <li key={index} className='w-full text-xl uppercase text-center px-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300'>
             <Link to={item.url} className="text-white">
               {item.label}
             </Link>

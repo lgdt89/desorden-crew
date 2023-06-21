@@ -1,4 +1,4 @@
-import viteLogo from "./assets/desorden.gif";
+import viteLogo from "./assets/LOGO DESORDEN.svg";
 import "./App.css";
 import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
