@@ -14,7 +14,7 @@ const About = () => {
         <video className="w-[85%] h-auto" controls autoPlay muted loop>
           <source src={video} type="video/mp4" />
         </video>
-        <p className="w-[85%] text-gray-500 text-justify text-xl ">
+        <p className="w-[80%] text-gray-500 text-justify text-xl ">
           With more than 20 years’ experience in Mauritius and abroad, the Lemon team is made up of people from diverse backgrounds who have built up strong skillsets in a wide range of markets. Talented, inspired, inspiring and… friendly.
         </p>
       </div>
@@ -46,8 +46,8 @@ const About = () => {
 
       </div>
 
-      <div className="w-full h-full text-center px-10">
-        <h1 className="text-gray-500 text-2xl mb-[20px]">Active listening</h1>
+      <div className="w-[80%] h-full text-center px-10">
+        <h1 className="text-gray-500 text-4xl mb-[20px]">Active listening</h1>
         <p className="text-gray-500 text-justify text-xl" >The words ‘honesty’ and ‘integrity’ are liberally sprinkled across many a corporate website. But to truly offer those values you have to back them up with some tough disciplines. Being transparent, following through on commitments, treating everyone equally, actively listening, continuously improving and taking responsibility. We work on these values every day.</p>
       </div>
 

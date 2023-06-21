@@ -1,7 +1,6 @@
 import HeroSection from "../components/HeroSection";
 import Services from "../views/Services";
 import Work from "../views/Work";
-import ContactUs from "./ContactUs";
 
 const Home = () => {
   return (
@@ -41,7 +40,6 @@ const Home = () => {
         <h1 className="text-white text-4xl p-[30px] pl-[120px]">WORK</h1>
       </div>
       <Work/>
-      {/* <ContactUs/> */}
     </div>
   );
 };

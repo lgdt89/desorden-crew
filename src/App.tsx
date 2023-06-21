@@ -14,8 +14,8 @@ function App() {
   return (
     <>
       <Header logoSrc={viteLogo} navItems={navLinks} />
-      <ContactUs/>
       <Outlet />
+      <ContactUs/>
     </>
   );
 }

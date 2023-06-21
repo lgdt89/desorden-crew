@@ -13,7 +13,7 @@ const ServiceCard = ({ image, name, ocupation, description, buttonMsg }: FlipCar
       <div className="relative w-full h-[450px] transition-all duration-1000 preserve-3d group-hover:my-rotate-y-180">
         <div className="absolute w-full text-center h-[450px] backface-hidden">
           <img src={image} className="h-[450px] w-full object-cover"/>
-          <p className="text-xl">{name}</p>
+          <p className="text-xl mt-[30px]">{name}</p>
           <p className="font-light text-[15px]">{ocupation}</p>
         </div>
         <div className="absolute py-[8px] px-[14px] text-left bg-yellow-500 w-full h-[500px] backface-hidden my-rotate-y-180">
