@@ -22,27 +22,74 @@ const About = () => {
       <div className="w-[90%] h-full mt-20 mb-40 flex flex-wrap flex-col md:flex-row justify-center items-center gap-y-40 gap-20">
         <FlipCard 
           image="/img/img-2.jpeg" 
-          name="GUILLAUME GONZAGUE" 
-          ocupation="Managing Director & Partner"
+          name="DANIELA ROJAS" 
+          ocupation="Creative Director"
           description="Guillaume is driven every day to ensure that Lemon remains an invaluable asset to our clients and his strategic skills have helped grow brand leaders in the FMCG, real estate, airline, tourism, new technology, automotive, financial services, banking and energy fields. Efficient and direct solutions guide Guillaume’s work ethos, but he values highly the exceptional relationships he has built over the years."
           buttonMsg="Send him an email"
         />
 
         <FlipCard 
           image="/img/img-3.jpeg" 
-          name="ZOÉ GONZAGUE" 
-          ocupation="Brand Consultant & Partner"
+          name="LUIS NOGUERA" 
+          ocupation="Graphic Design Manager"
           description="Zoé is passionate about brands. After ten years in top advertising agencies in France and the UK, she moved into the design realm at CB’a Design Solutions, Paris. Zoé will stop at nothing to ensure that her clients’ brands reach the next level and her extensive experience in fast moving consumer goods arenas, (including food, personal care and household products, as well as cosmetics and luxury brands), guarantees this."
           buttonMsg="Send her an email"
         />
 
         <FlipCard 
           image="/img/img-2.jpeg" 
-          name="BERNADETTE MOK" 
-          ocupation="Creative Director & Partner"
+          name="MILGREDDY PÉREZ" 
+          ocupation="Communications Manager"
           description="Bernie, as she is affectionately known, learnt her craft through an early-discovered passion for illustration. It is this same passion that took Bernadette to Paris, where a degree in Graphic Design & Communication set her on the path to becoming Lemon’s Creative Director and responsible, not only for a team of talented creatives, but for a respectable collection of brands in hotel and leisure, property development, banking, insurance and FMCG"
           buttonMsg="Send her an email"
         />
+
+      </div>
+      <div className="w-[90%] h-full mt-20 mb-40 flex flex-wrap flex-col md:flex-row justify-center items-center gap-y-40 gap-20">
+        <FlipCard 
+          image="/img/img-2.jpeg" 
+          name="DAVID VEGAS" 
+          ocupation="Motion Graphics"
+          description="Guillaume is driven every day to ensure that Lemon remains an invaluable asset to our clients and his strategic skills have helped grow brand leaders in the FMCG, real estate, airline, tourism, new technology, automotive, financial services, banking and energy fields. Efficient and direct solutions guide Guillaume’s work ethos, but he values highly the exceptional relationships he has built over the years."
+          buttonMsg="Send him an email"
+        />
+
+        <FlipCard 
+          image="/img/img-3.jpeg" 
+          name="LENIN BENITEZ" 
+          ocupation="Administrative Coordinator"
+          description="Zoé is passionate about brands. After ten years in top advertising agencies in France and the UK, she moved into the design realm at CB’a Design Solutions, Paris. Zoé will stop at nothing to ensure that her clients’ brands reach the next level and her extensive experience in fast moving consumer goods arenas, (including food, personal care and household products, as well as cosmetics and luxury brands), guarantees this."
+          buttonMsg="Send her an email"
+        />
+
+        <FlipCard 
+          image="/img/img-2.jpeg" 
+          name="ROMARIO BARRERA" 
+          ocupation="Graphic Design
+          "
+          description="Bernie, as she is affectionately known, learnt her craft through an early-discovered passion for illustration. It is this same passion that took Bernadette to Paris, where a degree in Graphic Design & Communication set her on the path to becoming Lemon’s Creative Director and responsible, not only for a team of talented creatives, but for a respectable collection of brands in hotel and leisure, property development, banking, insurance and FMCG"
+          buttonMsg="Send her an email"
+        />
+
+      </div>
+      <div className="w-[90%] h-full mt-20 mb-40 flex flex-wrap flex-col md:flex-row justify-center items-center gap-y-40 gap-20">
+        <FlipCard 
+          image="/img/img-2.jpeg" 
+          name="DANIEL ANGULO" 
+          ocupation="Graphic Design"
+          description="Guillaume is driven every day to ensure that Lemon remains an invaluable asset to our clients and his strategic skills have helped grow brand leaders in the FMCG, real estate, airline, tourism, new technology, automotive, financial services, banking and energy fields. Efficient and direct solutions guide Guillaume’s work ethos, but he values highly the exceptional relationships he has built over the years."
+          buttonMsg="Send him an email"
+        />
+
+        <FlipCard 
+          image="/img/img-3.jpeg" 
+          name="LUIS DÍAZ" 
+          ocupation="Web Developer"
+          description="Zoé is passionate about brands. After ten years in top advertising agencies in France and the UK, she moved into the design realm at CB’a Design Solutions, Paris. Zoé will stop at nothing to ensure that her clients’ brands reach the next level and her extensive experience in fast moving consumer goods arenas, (including food, personal care and household products, as well as cosmetics and luxury brands), guarantees this."
+          buttonMsg="Send her an email"
+        />
+
+      
 
       </div>
 
