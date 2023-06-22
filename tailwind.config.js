@@ -33,7 +33,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: "Avenir-Black",
+        secondary: "Avenir-Book",
+        roman: "Avenir-Roman"
+      },
+    },
   },
   plugins: [
     backfaceVisibility

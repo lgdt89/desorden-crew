@@ -7,27 +7,25 @@ const Home = () => {
     <div>
       <HeroSection />
       <div className="w-full md:h-[600px] bg-white px-0 md:px-5 lg:px-8 py-5 md:py-0 items-center flex flex-col md:flex-row justify-center items-center">
-        <div className="h-[200px] w-[200px] md:h-[360px] md:w-[360px] lg:h-[400px] lg:w-[400px] bg-[#fcb900] rounded-[50%] max-w-[500px] aspect-square flex justify-center items-center">
-          <span className="absolute text-4xl md:text-8xl">
-            No <br />
-            Star-
-            <br />
-            Dom
+        <div className="h-[200px] w-[200px] md:h-[360px] md:w-[360px] lg:h-[400px] lg:w-[400px]  max-w-[500px] aspect-square flex justify-center items-center">
+          <span className="absolute font-primary font-primary md:text-8xl">
+          If  <br />you're going <br />to do something,<br /> do it right.
+          
           </span>
         </div>
         <div className="w-auto p-9 md:ml-20 text-justify md:text-left">
           <div>
-            <h1 className="text-[20px] md:[25px] lg:text-[30px] text-yellow-500">
-              We believe in creativity that awards
-              <br /> businesses with results
+            <h1 className="font-primary text-[20px] md:[25px] lg:text-[30px] text-yellow-500">
+            It is proven that creativity is closely 
+              <br /> linked to positive business results.
             </h1>
           </div>
           <div>
-            <p className="text-[15spx] md:[20px] lg:text-[25px] font-light">
-              Lemon is astrategic, creative and proactive advertising and <br />{" "}
-              communications agency that helps brands and companies grow.
+            <p className="font-secondary text-[15spx] md:[20px] lg:text-[25px] font-light">
+            Desorden is a Boutique advertising  <br />{" "}
+            and strategic communications agency  with a creative 
               <br />
-              We are based in Mauritius – and wherever we find inspiration.
+              and proactive approach that helps brands and companies grow
             </p>
           </div>
         </div>
