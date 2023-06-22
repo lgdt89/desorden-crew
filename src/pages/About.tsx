@@ -3,23 +3,41 @@ import FlipCard from "../components/FlipCard.tsx"
 
 const About = () => {
   return (
-    <div className="w-full h-auto flex flex-col justify-center items-center py-10">
-     {/* <div className="h-[100px] w-full bg-black">
-        <h1 className="text-white text-4xl p-[30px] pl-[120px]">ABOUT</h1>
-      </div> 
-      No sé si vas a agregar los títulos de cada vista como en el home, se ve medio raro 
-      porque el Header es del mismo color
-      */} 
-      <div className="flex flex-col justify-center items-center gap-10">
-        <video className="w-[85%] h-auto" controls autoPlay muted loop>
+    <div className="w-full h-auto flex flex-col justify-center items-center gap-14 py-10 md:py-20">
+     
+      <section className="w-[85%] h-full text-center font-secondary">
+
+        <p className="w-full text-black text-3xl md:text-4xl xl:text-5xl font-extralight font-primary pb-5">
+          Pensamos de manera holística y trabajamos en colaboración para resolver los desafíos comerciales actuales al ayudar a nuestros cliuentes a planificar, crear y brindar experiencias de manera totalmente integradas.
+        </p>
+        <p className="w-full text-black text-md font-secondary">
+          Nuestro equipo multidisciplinario de estrategas, diseñadores, expertos en marcas y especialistas en UX/UI aportan talento, conocimientos y experiencia para brindar una amplia gama de servicios.
+        </p>
+
+      </section>
+
+      <section className="w-[85%] flex flex-col justify-center items-center gap-10">
+
+        <video className="h-auto" controls autoPlay muted loop>
           <source src={video} type="video/mp4" />
         </video>
-        <p className="w-[80%] text-gray-500 text-justify text-xl ">
+        {/*<p className="w-[80%] text-gray-500 text-justify text-xl ">
           With more than 20 years’ experience in Mauritius and abroad, the Lemon team is made up of people from diverse backgrounds who have built up strong skillsets in a wide range of markets. Talented, inspired, inspiring and… friendly.
-        </p>
-      </div>
+        </p>*/}
 
-      <div className="w-[90%] h-full mt-20 mb-40 flex flex-wrap flex-col md:flex-row justify-center items-center gap-y-40 gap-20">
+        <div className="h-full">
+          <h1 className="text-4xl md:text-5xl font-secondary pb-5">Our <b className="font-primary italic">Philosophy</b></h1>
+          <h3 className="w-full text-black text-xl font-semibold pb-3">
+            We believe that good design can create meaningful connections, lasting value and real impact.
+          </h3>
+          <p className="w-full text-black text-md">
+            We work in close colaboration with our clients, helping them to frame their biggest problems - and solving them through design. Our user-centric, multi-disciplinary approach focuses on creating a seamless experience across all digital, physical and communications touchpoints.
+          </p>
+        </div>
+
+      </section>
+
+      <div className="w-[90%] h-full my-10 flex flex-wrap flex-col md:flex-row justify-center items-center gap-y-40 gap-20">
         <FlipCard 
           image="/img/img-2.jpeg" 
           name="DANIELA ROJAS" 
@@ -91,11 +109,6 @@ const About = () => {
 
       
 
-      </div>
-
-      <div className="w-[80%] h-full text-center px-10">
-        <h1 className="text-gray-500 text-4xl mb-[20px]">Active listening</h1>
-        <p className="text-gray-500 text-justify text-xl" >The words ‘honesty’ and ‘integrity’ are liberally sprinkled across many a corporate website. But to truly offer those values you have to back them up with some tough disciplines. Being transparent, following through on commitments, treating everyone equally, actively listening, continuously improving and taking responsibility. We work on these values every day.</p>
       </div>
 
     </div>

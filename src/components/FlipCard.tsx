@@ -6,7 +6,7 @@ interface FlipCardProps {
   buttonMsg?: string;
 }
 
-const ServiceCard = ({ image, name, ocupation, description, buttonMsg }: FlipCardProps) => {
+const FlipCard = ({ image, name, ocupation, description, buttonMsg }: FlipCardProps) => {
   return (
 
     <div className="bg-transparent group w-[340px] h-[450px] perspective">
@@ -28,5 +28,5 @@ const ServiceCard = ({ image, name, ocupation, description, buttonMsg }: FlipCar
   );
 };
 
-export default ServiceCard;
+export default FlipCard;
 
