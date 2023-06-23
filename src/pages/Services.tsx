@@ -2,13 +2,13 @@ import ServicesSection from "../components/ServicesSection"
 
 const Services = () => {
   return (
-    <div className="flex flex-col justify-center bg-black pt-[100px]">
-      <ServicesSection customClass=""/>
-      <ServicesSection customClass="md: flex-row-reverse" customStyle={{flexDirection:"row-reverse"}} />
-      <ServicesSection customClass=""/>
-      <ServicesSection customClass="md: flex-row-reverse" />
-      <ServicesSection customClass=""/>
-      <ServicesSection customClass="md: flex-row-reverse" />
+    <div className="flex flex-col gap-28 justify-center items-center bg-black py-[20px] md:py-[100px]">
+      <ServicesSection image="/img/data_01.jpg" />
+      <ServicesSection image="/img/data_01.jpg" customClass="flex-row-reverse" />
+      <ServicesSection image="/img/data_01.jpg"/>
+      <ServicesSection image="/img/data_01.jpg"customClass="flex-row-reverse"/>
+      <ServicesSection image="/img/data_01.jpg"/>
+      <ServicesSection image="/img/data_01.jpg" customClass="flex-row-reverse"/>
     </div>
   )
 }

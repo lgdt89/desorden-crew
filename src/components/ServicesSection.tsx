@@ -1,13 +1,13 @@
-const ServicesSection = ({ customClass, customStyle }: any) => {
+const ServicesSection = ({customClass, image}:string) => {
   return (
-    <div
-      className={`${customClass} my-24 flex flex-col md:flex-row w-80 md:w-full h-80 md:h-300 self-center px-[50px]`}
-      style={customStyle}
-    >
+    <div className={`
+        w-full h-full my-5 md:h-300 [&>div,img]:max-h-[325px]  
+        flex flex-col md:flex-row md:${customClass} gap-6 md:gap-1
+        px-[50px]`}>
       <div className="w-full md:w-1/2 text-white">
-        <h1 className="text-3xl">TITLE OF THE SERVICES</h1>
+        <h1 className="text-3xl font-primary">TITLE OF THE SERVICES</h1>
         <br />
-        <p>
+        <p className="font-secondary">
           Hoy en día obtener data es más sencillo, todos hemos escuchado que
           cada paso que se hace puede ser medible, pero ¿de qué sirve toda esta
           data si no se interpreta correctamente?
@@ -21,8 +21,8 @@ const ServicesSection = ({ customClass, customStyle }: any) => {
         </p>
       </div>
       <img
-        className="w-full md:w-1/2 md:mx-[20px]"
-        src="/img/data_01.jpg"
+        className="w-full md:w-[48vw] md:h-[24vw] md:mx-[20px]"
+        src={image}
         alt="Service Image"
       />
     </div>
