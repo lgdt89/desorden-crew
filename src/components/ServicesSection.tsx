@@ -1,9 +1,10 @@
-const ServicesSection = ({ customClass,reverse }: any) => {
+const ServicesSection = ({ customClass, customStyle }: any) => {
   return (
     <div
-      className={`${customClass} ${reverse && 'md:flex-row-reverse'} my-24 flex flex-col md:flex-row w-[80%] h-[300px] self-center`}
+      className={`${customClass} my-24 flex flex-col md:flex-row w-80 md:w-full h-80 md:h-300 self-center px-[50px]`}
+      style={customStyle}
     >
-      <div className="w-[50%] text-white">
+      <div className="w-full md:w-1/2 text-white">
         <h1 className="text-3xl">TITLE OF THE SERVICES</h1>
         <br />
         <p>
@@ -19,7 +20,11 @@ const ServicesSection = ({ customClass,reverse }: any) => {
           efectiva.
         </p>
       </div>
-      <img className="w-[50%]" src="/img/data_01.jpg"/>
+      <img
+        className="w-full md:w-1/2 md:mx-[20px]"
+        src="/img/data_01.jpg"
+        alt="Service Image"
+      />
     </div>
   );
 };

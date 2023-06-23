@@ -3,25 +3,26 @@ import Services from "../views/Services";
 import Work from "../views/Work";
 
 const Home = () => {
+  // w-[200px] md:h-[360px] md:w-[360px] lg:h-[400px] lg:w-[400px]
   return (
     <div>
       <HeroSection />
       <div className="w-full md:h-[600px] bg-white px-0 md:px-5 lg:px-8 py-5 md:py-0 items-center flex flex-col md:flex-row justify-center items-center">
-        <div className="h-[200px] w-[200px] md:h-[360px] md:w-[360px] lg:h-[400px] lg:w-[400px]  max-w-[500px] aspect-square flex justify-center items-center">
-          <span className="absolute font-primary font-primary md:text-8xl">
+        <div className="h-[200px]  w-[50%] max-w-[500px] aspect-square flex justify-center items-center">
+          <p className="absolute text-4xl md:leading-[70px] font-primary font-primary md:text-[50px] ">
           If  <br />you're going <br />to do something,<br /> do it right.
           
-          </span>
+          </p>
         </div>
-        <div className="w-auto p-9 md:ml-20 text-justify md:text-left">
+        <div className="w-auto p-5 text-justify md:text-left">
           <div>
-            <h1 className="font-primary text-[20px] md:[25px] lg:text-[30px] text-yellow-500">
+            <h1 className="font-primary text-center md:text-justify text-[20px] md:[25px] lg:text-[30px] text-yellow-500">
             It is proven that creativity is closely 
               <br /> linked to positive business results.
             </h1>
           </div>
           <div>
-            <p className="font-secondary text-[15spx] md:[20px] lg:text-[25px] font-light">
+            <p className="font-secondary text-center md:text-justify text-[15spx] md:[20px] lg:text-[25px] font-light">
             Desorden is a Boutique advertising  <br />{" "}
             and strategic communications agency  with a creative 
               <br />
