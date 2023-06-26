@@ -1,14 +1,12 @@
+import {AiOutlineInstagram,AiOutlineFacebook} from "react-icons/ai"
+import { Link } from "react-router-dom";
 const ContactUs = () => {
   return (
     <div className="bg-black w-full h-auto lg:h-[600px] p-20 flex gap-10 lg:gap-20 justify-center flex-col lg:flex-row">
-      <div className="w-full lg:w-[50%] text-justify flex items-center flex-col lg:flex-row gap-10">
-        {/* <img src="/img/img-3.jpeg" className="w-[250px] h-[250px]" /> */}
+      <div className="w-full lg:w-[50%] justify-center text-justify flex items-center flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-[50%] min-w-[250px]">
           <p className="text-yellow-500 text-[18px]">
             Contact us, we are just a message away!
-            {/* <br /> <br />
-            
-            Take time to squeeze us in. */}
           </p>
           <p className="text-white text-[16px]">
             Dir: Av Francisco Lanata 116, Santiago de Surco. Lima - Perú TLF:
@@ -16,6 +14,14 @@ const ContactUs = () => {
             <br />
             <b>E-MAIL:</b> creativo@desordencrew.com
           </p>
+          <div className="flex justify-center space-x-2 mt-[10px]">
+            <Link to="https://instagram.com/eldesordencreativo?igshid=MzRlODBiNWFlZA==" target="_blank">
+
+          <AiOutlineInstagram color="white" size="30" className="cursor-pointer"/>
+            </Link>
+          <AiOutlineFacebook color="white" size="30" className="cursor-pointer"/>
+
+          </div>
         </div>
       </div>
       <div className="w-full lg:w-[50%] min-w-[250px] lg:max-w-[300px] xl:max-w-[500px] grid grid-cols-2 auto-rows-min content-center gap-4 auto-cols-[100px]">

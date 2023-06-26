@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
-      <div className="w-full md:h-[600px] bg-white px-0 md:px-5 lg:px-8 py-5 md:py-0 items-center flex flex-col md:flex-row justify-center items-center">
+      <div className="w-full md:h-[500px] bg-white px-0 md:px-5 lg:px-8 py-5 md:py-0 items-center flex flex-col md:flex-row justify-center items-center">
         <div className="h-[200px]  w-[50%] max-w-[500px] aspect-square flex justify-center items-center">
           <p className="absolute text-4xl md:leading-[70px] font-primary font-primary md:text-[50px] ">
           If  <br />you're going <br />to do something,<br /> do it right.
@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         <div className="w-auto p-5 text-justify md:text-left">
           <div>
-            <h1 className="font-primary text-center md:text-justify text-[20px] md:[25px] lg:text-[30px] text-yellow-500">
+            <h1 className="font-primary text-center md:text-justify text-[20px] lg:text-[30px] text-yellow-500">
             It is proven that creativity is closely 
               <br /> linked to positive business results.
             </h1>

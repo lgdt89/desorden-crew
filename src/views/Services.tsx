@@ -1,5 +1,4 @@
 import ServiceCard from "../components/ServiceCard";
-import { Link } from "react-router-dom";
 import {HashLink} from "react-router-hash-link"
 const Services = () => {
   const servicesViewsData = [

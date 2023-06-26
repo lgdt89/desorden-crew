@@ -6,7 +6,7 @@ interface ServiceSectionProps{
   isReverseSection?:boolean
 }
 
-const ServicesSection = ({customClass, image, id, title,isReverseSection}: ServiceSectionProps) => {
+const ServicesSection = ({image, id, title,isReverseSection}: ServiceSectionProps) => {
   return (
 
      <div
@@ -19,7 +19,6 @@ const ServicesSection = ({customClass, image, id, title,isReverseSection}: Servi
       <div
         className={`w-full md:w-1/2 text-white justify-between  ${isReverseSection ? "pl-[10px]" : "pr-[10px]"}`}
         id={id}
-        // style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
       >
         <h1 className="text-3xl font-primary">{title}</h1>
         <br />
