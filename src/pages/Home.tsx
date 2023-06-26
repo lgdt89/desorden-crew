@@ -1,9 +1,9 @@
+
 import HeroSection from "../components/HeroSection";
 import Services from "../views/Services";
 import Work from "../views/Work";
 
 const Home = () => {
-  // w-[200px] md:h-[360px] md:w-[360px] lg:h-[400px] lg:w-[400px]
   return (
     <div>
       <HeroSection />
@@ -16,6 +16,7 @@ const Home = () => {
         </div>
         <div className="w-auto p-5 text-justify md:text-left">
           <div>
+
             <h1 className="font-primary text-center md:text-justify text-[20px] lg:text-[30px] text-yellow-500">
             It is proven that creativity is closely 
               <br /> linked to positive business results.

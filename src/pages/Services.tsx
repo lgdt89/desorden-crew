@@ -13,30 +13,30 @@ const Services = () => {
         image="/img/data_01.jpg"
         id="segunda_seccion"
         customClass="flex-row-reverse"
-        title="Advertising"
+        title="Digital & Social Media"
         isReverseSection
       />
       <ServicesSection
         image="/img/data_01.jpg"
         id="tercera_seccion"
-        title="Digital & Social Media"
+        title="Creativity and Content"
       />
       <ServicesSection
         image="/img/data_01.jpg"
         id="cuarta_seccion"
-        title="Branding & Packaging"
+        title="Maling & Newsletters"
         customClass="flex-row-reverse"
         isReverseSection
       />
       <ServicesSection
         image="/img/data_01.jpg"
         id="quinta_seccion"
-        title="Annual Reports & Newsletters"
+        title="Photo Shoot"
       />
       <ServicesSection
         image="/img/data_01.jpg"
         id="sexta_seccion"
-        title="Brochures & Flyers"
+        title="Audiovisual Production"
         customClass="flex-row-reverse"
         isReverseSection
       />
