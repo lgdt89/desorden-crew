@@ -29,28 +29,6 @@ const Home = () => {
             and proactive approach that helps brands and companies grow
           </p>
         </div>
-        {/* <div className="h-[200px]  w-[100%]  aspect-square flex justify-center items-center">
-          <h1 className="absolute text-4xl md:leading-[90px] font-primary font-primary md:text-[70px] ">
-          If  <br />you're going <br />to do something,<br /> do it right.
-          </h1>
-        </div>
-        <div className="w-auto p-5 text-justify md:text-left">
-          <div>
-
-            <p className="font-primary text-center md:text-justify text-[20px] lg:text-[30px] text-yellow-500">
-            It is proven that creativity is closely 
-              <br /> linked to positive business results.
-            </p>
-          </div>
-          <div>
-            <p className="font-secondary text-center md:text-justify text-[15spx] md:[20px] lg:text-[25px] font-light">
-            Desorden is a Boutique advertising  <br />{" "}
-            and strategic communications agency  with a creative 
-              <br />
-              and proactive approach that helps brands and companies grow
-            </p>
-          </div>
-        </div> */}
       </div>
       <div className="h-[100px] w-full bg-[#215a6d]">
         <h2 className="text-white text-4xl p-[30px] pl-[120px]">SERVICES</h2>
