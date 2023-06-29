@@ -1,6 +1,6 @@
 const Work = () => {
   return (
-    <div className="h-auto pt-[50px] pb-[100px] px-[100px] w-full bg-gray-200">
+    <div className="h-auto pt-[50px] pb-[100px] px-[100px] w-full bg-[#dfece6]">
       <div className="grid grid-cols-3 grid-rows-3 w-full">
         <div className=" m-2 row-span-2 h-[600px] bg-[url('/img/img-1.jpg')] bg-cover">1</div>
         <div className=" m-2 bg-red-500 row-span-2 h-[600px] bg-[url('/img/img-4.jpg')] hover:bg-none ">2</div>

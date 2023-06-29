@@ -8,10 +8,10 @@ const About = () => {
       <section className="w-[85%] h-full text-center font-secondary">
 
         <p className="w-full text-black text-3xl md:text-4xl xl:text-5xl font-extralight font-primary pb-5">
-          Pensamos de manera holística y trabajamos en colaboración para resolver los desafíos comerciales actuales al ayudar a nuestros cliuentes a planificar, crear y brindar experiencias de manera totalmente integradas.
+        We think holistically and work collaboratively to solve current business challenges by helping our clients plan, create, and deliver fully integrated experiences.
         </p>
         <p className="w-full text-black text-md font-secondary">
-          Nuestro equipo multidisciplinario de estrategas, diseñadores, expertos en marcas y especialistas en UX/UI aportan talento, conocimientos y experiencia para brindar una amplia gama de servicios.
+        Our multidisciplinary team of strategists, designers, brand experts, and UX/UI specialists bring talent, knowledge, and experience to provide a wide range of services.
         </p>
 
       </section>
@@ -39,7 +39,7 @@ const About = () => {
 
       <div className="w-[90%] h-full my-10 flex flex-wrap flex-col md:flex-row justify-center items-center gap-y-40 gap-20">
         <FlipCard 
-          image="/img/img-2.jpeg" 
+          image="/img/DANIELA.png" 
           name="DANIELA ROJAS" 
           ocupation="Creative Director"
           description="Guillaume is driven every day to ensure that Lemon remains an invaluable asset to our clients and his strategic skills have helped grow brand leaders in the FMCG, real estate, airline, tourism, new technology, automotive, financial services, banking and energy fields. Efficient and direct solutions guide Guillaume’s work ethos, but he values highly the exceptional relationships he has built over the years."
@@ -47,7 +47,7 @@ const About = () => {
         />
 
         <FlipCard 
-          image="/img/img-3.jpeg" 
+          image="/img/NOGUERA.png" 
           name="LUIS NOGUERA" 
           ocupation="Graphic Design Manager"
           description="Zoé is passionate about brands. After ten years in top advertising agencies in France and the UK, she moved into the design realm at CB’a Design Solutions, Paris. Zoé will stop at nothing to ensure that her clients’ brands reach the next level and her extensive experience in fast moving consumer goods arenas, (including food, personal care and household products, as well as cosmetics and luxury brands), guarantees this."
@@ -55,7 +55,7 @@ const About = () => {
         />
 
         <FlipCard 
-          image="/img/img-2.jpeg" 
+          image="/img/MILGREDDY.png" 
           name="MILGREDDY PÉREZ" 
           ocupation="Communications Manager"
           description="Bernie, as she is affectionately known, learnt her craft through an early-discovered passion for illustration. It is this same passion that took Bernadette to Paris, where a degree in Graphic Design & Communication set her on the path to becoming Lemon’s Creative Director and responsible, not only for a team of talented creatives, but for a respectable collection of brands in hotel and leisure, property development, banking, insurance and FMCG"
@@ -65,7 +65,7 @@ const About = () => {
       </div>
       <div className="w-[90%] h-full mt-20 mb-40 flex flex-wrap flex-col md:flex-row justify-center items-center gap-y-40 gap-20">
         <FlipCard 
-          image="/img/img-2.jpeg" 
+          image="/img/DAVID.png" 
           name="DAVID VEGAS" 
           ocupation="Motion Graphics"
           description="Guillaume is driven every day to ensure that Lemon remains an invaluable asset to our clients and his strategic skills have helped grow brand leaders in the FMCG, real estate, airline, tourism, new technology, automotive, financial services, banking and energy fields. Efficient and direct solutions guide Guillaume’s work ethos, but he values highly the exceptional relationships he has built over the years."

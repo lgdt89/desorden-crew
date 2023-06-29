@@ -2,7 +2,7 @@ import {AiOutlineInstagram,AiOutlineFacebook} from "react-icons/ai"
 import { Link } from "react-router-dom";
 const ContactUs = () => {
   return (
-    <div className="bg-black w-full h-auto lg:h-[600px] p-20 flex gap-10 lg:gap-20 justify-center flex-col lg:flex-row">
+    <div className="bg-black w-full h-auto lg:h-[500px] p-20 flex gap-10 lg:gap-20 justify-center flex-col lg:flex-row">
       <div className="w-full lg:w-[50%] justify-center text-justify flex items-center flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-[50%] min-w-[250px]">
           <p className="text-yellow-500 text-[18px]">
@@ -15,7 +15,7 @@ const ContactUs = () => {
             <b>E-MAIL:</b> creativo@desordencrew.com
           </p>
           <div className="flex justify-center space-x-2 mt-[10px]">
-            <Link to="https://instagram.com/eldesordencreativo?igshid=MzRlODBiNWFlZA==" target="_blank">
+            <Link to="https://instagram.com/eldesordencreativo?igshid=MzRlODBiNWFlZA==" target="_blank" aria-label="Instagram">
 
           <AiOutlineInstagram color="white" size="30" className="cursor-pointer"/>
             </Link>
@@ -29,19 +29,22 @@ const ContactUs = () => {
           type="text"
           className="h-[40px] px-[5px] bg-transparent appearance-none border-2 leading-tight hover:border-yellow-500 focus:border-yellow-500 focus:outline-none focus:bg-white focus:shadow-yellow-900"
           placeholder="First Name"
+          aria-label="First Name"
         />
         <input
           type="text"
           className="h-[40px] px-[5px] bg-transparent appearance-none border-2 leading-tight hover:border-yellow-500 focus:border-yellow-500 focus:outline-none focus:bg-white focus:shadow-yellow-900"
           placeholder="Last Name"
+          aria-label="Last Name"
         />
         <input
           type="text"
           className="col-span-2 h-[40px] px-[5px] bg-transparent appearance-none border-2 leading-tight hover:border-yellow-500 focus:border-yellow-500 focus:outline-none focus:bg-white focus:shadow-yellow-900"
           placeholder="Email"
+          aria-label="Email"
         />
         <textarea className="col-span-2 h-[200px] px-[5px] py-2 bg-transparent appearance-none border-2 leading-tight hover:border-yellow-500 focus:border-yellow-500 focus:outline-none focus:bg-white focus:shadow-yellow-900" />
-        <button className="self-center w-full bg-white hover:bg-yellow-500 text-black font-semibold hover:text-white py-2 px-4">
+        <button type="submit" className="self-center w-full bg-white hover:bg-yellow-500 text-black font-semibold hover:text-white py-2 px-4">
           Submit
         </button>
       </div>

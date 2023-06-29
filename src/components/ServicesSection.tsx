@@ -17,12 +17,12 @@ const ServicesSection = ({image, id, title,isReverseSection}: ServiceSectionProp
      
     >
       <div
-        className={`w-full md:w-1/2 text-white justify-between  ${isReverseSection ? "pl-[10px]" : "pr-[10px]"}`}
+        className={`w-full md:w-1/2 text-white justify-between  ${isReverseSection ? "pl-[30px]" : "pr-[30px]"}`}
         id={id}
       >
-        <h1 className="text-3xl font-primary">{title}</h1>
+        <h1 className="text-5xl font-primary ">{title}</h1>
         <br />
-        <p className="font-secondary">
+        <p className="font-secondary text-2xl">
           Hoy en día obtener data es más sencillo, todos hemos escuchado que cada paso que se hace puede ser medible,
           pero ¿de qué sirve toda esta data si no se interpreta correctamente?
           <br />

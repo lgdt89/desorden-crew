@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       </div>
 
       {isMenuOpen && (
-        <ul className="absolute left-0 right-0 mx-auto bg-white mt-4 rounded-md md:mt-9 py-2 z-10 md:hidden">
+        <ul className="absolute left-0 right-0 mx-auto bg-white mt-4 rounded-md md:mt-9 py-2 z-10 md:hidden" aria-haspopup="true">
           {items.map((item, index) => (
             <li key={index} className='border-b-4 pl-3'>
               <Link to={item.url} className="block text-black  px-4 py-2">
