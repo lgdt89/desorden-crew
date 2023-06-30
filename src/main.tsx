@@ -10,6 +10,7 @@ import About from './pages/About.tsx';
 import Home from './pages/Home.tsx';
 import Services from './pages/Services.tsx';
 import Work from './pages/Work.tsx';
+import { WorkDetail } from './pages/WorkDetail.tsx';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
        {
         path: "/work",
         element: <Work />,
+       },
+       {
+        path: "/work/:projectName",
+        element: <WorkDetail />,
        },
     ],
   },
