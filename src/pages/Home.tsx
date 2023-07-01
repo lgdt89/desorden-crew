@@ -1,6 +1,6 @@
 import HeroSection from "../components/HeroSection";
 import Services from "../views/Services";
-import Work from "../views/Work";
+import WorkSection from "../views/WorkSection";
 
 const Home = () => {
   return (
@@ -37,7 +37,7 @@ const Home = () => {
       <div className="h-[100px] w-full bg-[#215a6d]">
         <h2 className="text-white text-4xl p-[30px] pl-[120px]">WORK</h2>
       </div>
-      <Work />
+      <WorkSection />
     </div>
   );
 };

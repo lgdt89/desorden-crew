@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-const Work = () => {
+const WorkSection = () => {
   const navigate = useNavigate()
   return (
     <div className="h-auto pt-[50px] pb-[100px] px-[100px] w-full bg-[#dfece6]">
@@ -19,4 +19,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default WorkSection;
