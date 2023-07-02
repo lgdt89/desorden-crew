@@ -1,22 +1,26 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import ImageSection from '../components/ImageSection';
 import ProjectCard from '../components/ProjectCard';
 
 export const WorkDetail = () => {
     const params = useParams()
-    console.log(params)
-    // console.log("props", params.projectName)
+    const location = useLocation()
+    const {projectName, projectDescription,images} = location?.state
+    console.log("props", images)
   return (
 
     <div> 
-      <div className="h-[100px] w-full bg-black #215a6d flex flex-row items-center justify-between"> 
-        <h1 className="w-[50%] text-white font-primary text-4xl p-[30px]">{params.projectName}</h1>
+      {/* <div className="h-[100px] w-full bg-black #215a6d flex flex-row items-center justify-between"> 
+        <h1 className="w-[50%] text-white font-primary text-4xl p-[30px]">{projectName}</h1>
         <h3 className="w-[50%] text-white font-secondary text-2xl">subtitle example</h3>
-      </div>
+      </div> */}
       
-      <section className="w-full">
-        <img className="w-full" src="https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_01-1536x674.jpg"/>
+      <section className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 h-[600px] flex justify-center font-roman text-6xl items-center">
+        
+          <h1 className='text-white'>{projectName}</h1>
+      
+        {/* <img className="w-full" src="https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_01-1536x674.jpg"/> */}
       </section>
 
       <section className="w-full text-white font-secondary bg-black flex flex-row gap-10 py-20 px-10">
@@ -40,26 +44,28 @@ export const WorkDetail = () => {
           </div>
         </div>
         <div className="w-[50%] text-xl">
-          <p>Hay solo una cosa que nos gusta más que comer helados: Diseñar los empaques para una marca de helados. Della Fruta nació con la intención de ofrecer helados bien hechos, sin ahorrar en ingredientes, sin aire y con mucha fruta. El brief estaba más claro que el agua: un helado premium con mucha, muchísima fruta. El diseño debía responder a eso y diferenciarse de la competencia en el punto de venta.
+          <p>{projectDescription}</p>
+          {/* <p>Hay solo una cosa que nos gusta más que comer helados: Diseñar los empaques para una marca de helados. Della Fruta nació con la intención de ofrecer helados bien hechos, sin ahorrar en ingredientes, sin aire y con mucha fruta. El brief estaba más claro que el agua: un helado premium con mucha, muchísima fruta. El diseño debía responder a eso y diferenciarse de la competencia en el punto de venta.
           <br/> <br/>
-            Como suele pasar, la solución estaba en descubrir la ventaja diferencial y hacerla evidente. Después de analizar cómo se comportaban las marcas de la competencia, vimos la oportunidad de poner a la fruta como protagonista de los empaques y decidimos aprovecharla.</p>
+            Como suele pasar, la solución estaba en descubrir la ventaja diferencial y hacerla evidente. Después de analizar cómo se comportaban las marcas de la competencia, vimos la oportunidad de poner a la fruta como protagonista de los empaques y decidimos aprovecharla.</p> */}
         </div>
       </section>
 
       <section className="w-full">
         <ImageSection 
-          image1 = "https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_02-1536x674.jpg"
+          image1 = {images.img1}
+          // "https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_02-1536x674.jpg"
         />
         <ImageSection 
-          image1 = "https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_05.jpg"
-          image2 = "https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_06.jpg"
+          image1 = {images.img2}
+          image2 = {images.img3}
         />
         <ImageSection
-          image1 = "https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_03.jpg"
-          image2 = "https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_04.jpg"
+          image1 = {images.img4}
+          image2 = {images.img5}
         />
         <ImageSection
-          image1 = "https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_07-1536x674.jpg"
+          image1 = {images.img6}
         />
       </section>
 

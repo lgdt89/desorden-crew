@@ -1,5 +1,8 @@
-
-const ImageSection = ({ image1, image2 }) => {
+interface ImageSectionProps{
+  image1:string,
+  image2?: string
+}
+const ImageSection = ({ image1, image2 }:ImageSectionProps) => {
   return (
     <div className="flex">
       {image1 && (
