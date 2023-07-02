@@ -8,6 +8,7 @@ export const WorkDetail = () => {
     const location = useLocation()
     const {projectName, projectDescription,images} = location?.state
     console.log("props", images)
+
   return (
 
     <div> 
@@ -23,8 +24,9 @@ export const WorkDetail = () => {
         {/* <img className="w-full" src="https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_01-1536x674.jpg"/> */}
       </section>
 
-      <section className="w-full text-white font-secondary bg-black flex flex-row gap-10 py-20 px-10">
-        <div className="w-[50%] h-full text-sm flex flex-row gap-10 self-end">
+      <section className="w-full text-white font-secondary bg-black flex flex-col-reverse md:flex-row gap-10 py-20 px-10">
+
+        <div id="projectInfo" className="w-full md:w-[50%] h-full text-sm flex flex-row gap-10 self-end">
           <div className="w-[50%]">
             <h3 className="text-gray-500 mb-4">Services</h3>
             <h4 className="mb-6">Branding</h4>
@@ -43,7 +45,7 @@ export const WorkDetail = () => {
             </ul>
           </div>
         </div>
-        <div className="w-[50%] text-xl">
+        <div className="w-full md:w-[50%] text-xl">
           <p>{projectDescription}</p>
           {/* <p>Hay solo una cosa que nos gusta más que comer helados: Diseñar los empaques para una marca de helados. Della Fruta nació con la intención de ofrecer helados bien hechos, sin ahorrar en ingredientes, sin aire y con mucha fruta. El brief estaba más claro que el agua: un helado premium con mucha, muchísima fruta. El diseño debía responder a eso y diferenciarse de la competencia en el punto de venta.
           <br/> <br/>
@@ -69,11 +71,11 @@ export const WorkDetail = () => {
         />
       </section>
 
-      <section className="w-full h-[450px] bg-black">
+      <section className="w-full h-full bg-black">
         <div className="h-[90px] w-full flex items-center pl-6">
           <h3 className="text-gray-300 font-secondary text-2xl">Ver otros proyectos</h3>
         </div>
-        <div className="flex w-full h-full flex-row gap-6 px-6">
+        <div className="flex w-full flex-col md:flex-row gap-6 gap-y-14 px-6">
 
           <ProjectCard 
             title = "Moena"
