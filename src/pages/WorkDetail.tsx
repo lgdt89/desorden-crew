@@ -1,21 +1,14 @@
-import React from 'react'
-import { useParams, useLocation } from 'react-router-dom';
+import {  useLocation } from 'react-router-dom';
 import ImageSection from '../components/ImageSection';
 import ProjectCard from '../components/ProjectCard';
 
 export const WorkDetail = () => {
-    const params = useParams()
     const location = useLocation()
     const {projectName, projectDescription,images} = location?.state
     console.log("props", images)
   return (
 
     <div> 
-      {/* <div className="h-[100px] w-full bg-black #215a6d flex flex-row items-center justify-between"> 
-        <h1 className="w-[50%] text-white font-primary text-4xl p-[30px]">{projectName}</h1>
-        <h3 className="w-[50%] text-white font-secondary text-2xl">subtitle example</h3>
-      </div> */}
-      
       <section className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 h-[600px] flex justify-center font-roman text-6xl items-center">
         
           <h1 className='text-white'>{projectName}</h1>
