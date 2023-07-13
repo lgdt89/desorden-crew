@@ -11,8 +11,8 @@ const ImageSection = ({ image1, image2,image3, video1, showVideo = false }:Image
   return (
     <div className="flex flex-col md:flex-row">
       {image1 ? (
-        <img src={image1} className={image2 ? "w-full md:w-1/3" : "w-full"} />
-      ) : (showVideo && <video className="w-full w-full" autoPlay muted loop>
+        <img src={image1} className={image2 ? "w-full md:w-1/3" : "w-full h-[290px] object-cover"} />
+      ) : (showVideo && <video className="w-full h-[290px] object-cover" autoPlay muted loop>
         <source src={video1} type="video/mp4"/>
       </video>)}
 
