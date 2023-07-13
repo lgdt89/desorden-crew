@@ -53,14 +53,16 @@ export const WorkDetail = () => {
       </section>
 
       <section className="w-full">
-        {/*{videos  && (<video className="w-full" autoPlay muted loop>
-        <source src={videos.video1} type="video/mp4"/>
-      </video>)}*/}
-
-        <ImageSection
-          showVideo={projectName === "Cerveza"}
-          video1={videos.video1}
-        />
+        {videos ?
+          <ImageSection
+            showVideo={projectName === "Cerveza"}
+            video1={videos.video1}
+          />
+          :
+          <ImageSection
+            image1={images?.img2}
+          />
+        }
 
         <ImageSection 
           image1={images?.img2} 
@@ -78,8 +80,13 @@ export const WorkDetail = () => {
           image3={videos?.video1}
         />
 
-        <ImageSection image1={images?.img4} image2={images?.img5} />
+        <ImageSection
+          image1={images?.img4}
+          image2={images?.img5}
+          image3={images?.img6}
+        />
         <ImageSection image1={images?.img6} />
+
       </section>
 
       {/* <section className="w-full h-full bg-black">
