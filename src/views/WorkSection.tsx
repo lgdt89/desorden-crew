@@ -7,7 +7,7 @@ const WorkSection = ({ isFromPage }: any) => {
       ? navigate(`/work/${projectName}`, { state: data })
       : navigate("/work/#top");
   };
-  console.log("data", data_cerveza)
+  console.log("data", data_navegante)
 
   return (
    <div className="flex flex-col space-y-4 items-center h-auto pt-[50px] pb-[20px] px-[20px] md:pb-[20px] w-full bg-[#dfece6]">

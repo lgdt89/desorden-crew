@@ -17,7 +17,7 @@ export const WorkDetail = () => {
   } = location?.state || {}
   console.log("loca", location?.state)
   if(!location?.state) return <ErrorPage/>
-
+    console.log(videos)
   return (
     <div>
       <section
@@ -53,18 +53,31 @@ export const WorkDetail = () => {
       </section>
 
       <section className="w-full">
-        {videos  && <video className="w-full min-h-[230px] h-[400px]" autoPlay muted loop>
+        {/*{videos  && (<video className="w-full" autoPlay muted loop>
         <source src={videos.video1} type="video/mp4"/>
-      </video>}
+      </video>)}*/}
+
         <ImageSection
           showVideo={projectName === "Cerveza"}
-          // image1={images?.img1}
           video1={videos.video1}
-          image2={images?.img2}
-          image3={images?.img3}
-          // "https://sed.pe/wp-content/uploads/2023/06/Della_Fruta_web_proyectos_02-1536x674.jpg"
         />
-        <ImageSection image1={images?.img2} image2={images?.img3} />
+
+        <ImageSection 
+          image1={images?.img2} 
+          image2={images?.img3} 
+          image3={images?.img2}
+        />
+
+        <ImageSection
+          image1={images?.img2}
+        />
+
+        <ImageSection 
+          image1={images?.img2} 
+          image2={images?.img3} 
+          image3={videos?.video1}
+        />
+
         <ImageSection image1={images?.img4} image2={images?.img5} />
         <ImageSection image1={images?.img6} />
       </section>
