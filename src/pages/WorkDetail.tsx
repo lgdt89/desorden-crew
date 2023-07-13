@@ -55,8 +55,8 @@ export const WorkDetail = () => {
       <section className="w-full">
         {videos ?
           <ImageSection
-            showVideo={projectName === "Cerveza"}
-            video1={videos.video1}
+            // showVideo={projectName === "Cerveza"}
+            image1={videos.video1}
           />
           :
           <ImageSection
@@ -65,9 +65,9 @@ export const WorkDetail = () => {
         }
 
         <ImageSection 
-          image1={images?.img2} 
-          image2={images?.img3} 
-          image3={images?.img2}
+          image1={videos?.video1} 
+          image2={images?.img2} 
+          image3={images?.img3}
         />
 
         <ImageSection
