@@ -2,7 +2,7 @@ import WorkSection from "../views/WorkSection"
 
 const Work = () => {
   return (
-    <div> 
+    <div id="top"> 
       <WorkSection isFromPage={true}/>
     </div>
   )

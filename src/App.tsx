@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
+import ScrollToTop from "./utils";
 
 function App() {
   const navLinks = [
@@ -13,6 +14,7 @@ function App() {
   ];
   return (
     <>
+    <ScrollToTop/>
       <Header logoSrc={viteLogo} navItems={navLinks} />
       <Outlet />
       <ContactUs/>

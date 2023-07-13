@@ -20,6 +20,16 @@ module.exports = {
   "rules": {
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": "error",
-    "max-len": ["error", { "code": 80 }]
+   "max-len": [
+  "error",
+  {
+    "code": 60,
+    "tabWidth": 2,
+    "ignoreComments": true, //"comments": 80
+    "ignoreUrls": true,
+    "ignoreStrings": true,
+    "ignoreTemplateLiterals": true
+  }
+]
   }
 }
